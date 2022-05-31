@@ -1,0 +1,64 @@
+{
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "tsconfig.json"
+  },
+  "plugins": ["@typescript-eslint/eslint-plugin", "import", "prettier"],
+  "extends": [
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "airbnb-typescript/base",
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": "error",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/camelcase": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-parameter-properties": "off",
+    "import/no-cycle": "off",
+    "no-continue": "off",
+    "no-plusplus": "off",
+    "no-await-in-loop": "off",
+    "no-underscore-dangle": ["error", { "allowAfterThis": true }],
+    "class-methods-use-this": "off",
+    "no-dupe-class-members": "off",
+    "no-useless-constructor": "off",
+    "no-shadow": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          ["builtin", "external"],
+          ["parent", "sibling", "index"],
+          "object"
+        ],
+        "newlines-between": "always"
+      }
+    ],
+    "import/prefer-default-export": "off"
+  },
+  "overrides": [
+    {
+      "files": ["*.entity.ts", "*.service.ts", "*.controller.ts", "*.guard.ts"],
+      "rules": {
+        "@typescript-eslint/explicit-member-accessibility": "off",
+        "no-empty-function": "off",
+        "import/prefer-default-export": "off"
+      }
+    }
+  ]
+}

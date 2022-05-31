@@ -1,0 +1,6 @@
+{
+  "root": "packages/web",
+  "projectType": "application",
+  "sourceRoot": "packages/web/src",
+  "tags": []
+}

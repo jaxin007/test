@@ -1,0 +1,17 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node -r dotenv/config dist/server.js",
+    "serve": "nodemon",
+    "start:dev": "ts-node -r dotenv/config ./src/server.ts",
+    "lint": "eslint --ignore-path .eslintignore --ext .ts ."
+  },
+  "author": "",
+  "license": "ISC"
+}

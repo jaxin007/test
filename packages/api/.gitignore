@@ -1,0 +1,9 @@
+node_modules/
+.idea/
+dist/
+.env
+src/logs
+
+db.sqlite
+db.sqlite-shm
+db.sqlite-wal

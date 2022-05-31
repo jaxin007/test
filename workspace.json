@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "web": "packages/web",
+    "api": "packages/api"
+  }
+}

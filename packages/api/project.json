@@ -1,0 +1,6 @@
+{
+  "root": "packages/api",
+  "projectType": "application",
+  "sourceRoot": "packages/api/src",
+  "tags": []
+}

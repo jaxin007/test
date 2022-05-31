@@ -1,0 +1,11 @@
+{
+  "name": "web2",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint --ignore-path .eslintignore --ext .js,.ts ."
+  }
+}
